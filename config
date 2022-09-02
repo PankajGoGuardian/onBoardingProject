@@ -1,0 +1,2 @@
+const mongoose = require("mongoose")
+mongoose.connect("mongodb://pankaj:Pnkjkr@ac-cm98gzg-shard-00-00.qavsgrc.mongodb.net:27017,ac-cm98gzg-shard-00-01.qavsgrc.mongodb.net:27017,ac-cm98gzg-shard-00-02.qavsgrc.mongodb.net:27017/onBoarding?ssl=true&replicaSet=atlas-vicbm2-shard-0&authSource=admin&retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("successfully connected to onBoarding DataBase")).catch((err)=>console.log(err));
